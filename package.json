@@ -1,0 +1,21 @@
+{
+  "name": "own-site-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build:cv": "rmdir /q /s build\\cv && cd ../cv && npm run build && move build ../back/build/cv",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antti Pham",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
