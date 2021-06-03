@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:cv": "rmdir /q /s build\\cv && cd ../cv && npm run build && move build ../back/build/cv",
+    "build:cv": "rmdir -Recurse -Force -Confirm:$false build\\cv && cd ../cv && npm run build && move build ../back/build/cv",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Antti Pham",
